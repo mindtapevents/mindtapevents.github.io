@@ -45,6 +45,14 @@ a:visited {
     text-decoration: none;
 }
 
+.event{
+    color: purple;
+}
+
+.event:hover{
+    color: grey;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
