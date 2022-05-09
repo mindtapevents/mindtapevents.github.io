@@ -24,12 +24,16 @@ label {
     color: #34495e;
 }
 
-a:link, a:visited a:hover, a:active {
-    color: white;
-    text-align: center;
+a:link, a:visited {
     text-decoration: none;
     display: inline-block;
-  }
+}
+
+a:hover, a:active {
+    color: green;
+    letter-spacing:.5em;
+    animation: scale 2000ms ease-in-out forwards;
+}
 
 .social {
     color: black;
@@ -38,6 +42,17 @@ a:link, a:visited a:hover, a:active {
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+.flyer-img-responsive {
+    position:relative;
+    transform-origin: center center;
+    /* animation: scale 2000ms ease-in-out forwards; */
+    float: center;
+    height: 100%;
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: contain;
 }
 
 .logo {
@@ -149,7 +164,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #2e5b7a;
+    background: #000;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -158,8 +173,8 @@ a.pure-button-primary {
     top: 0;
     left: 0;
     position: fixed !important;
-    background-image: url("../img/LaunchEvent-Flyer-EventbriteBanner.jpg");
-    background-size: cover;
+    /* background-image: url("../img/LaunchEvent-Flyer-EventbriteBanner.jpg"); */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -190,10 +205,12 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
+    color: black;
     letter-spacing: 0.08em;
     opacity: 0.8;
-    padding-top: 0.1em
+    padding-top: 0.1em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 /*
@@ -308,4 +325,9 @@ a.pure-button-primary {
     .splash-head {
         font-size: 300%;
     }
+}
+
+
+.footer-link {
+    color: white;
 }
