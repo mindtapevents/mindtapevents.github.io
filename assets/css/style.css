@@ -24,20 +24,19 @@ label {
     color: #34495e;
 }
 
-a:link, a:visited {
+a:link, a:active {
     text-decoration: none;
     display: inline-block;
 }
 
-a:hover, a:active {
-    color: green;
+a:visited, a:hover {
+    color: #4ad39e;
     letter-spacing:.5em;
-    animation: scale 2000ms ease-in-out forwards;
 }
 
 .social {
     color: black;
-    letter-spacing: .5em;
+    letter-spacing: 2em;
     text-decoration: none;
 }
 
