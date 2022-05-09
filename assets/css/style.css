@@ -29,14 +29,19 @@ a:link, a:active {
     display: inline-block;
 }
 
-a:visited, a:hover {
+a:hover {
     color: #4ad39e;
-    letter-spacing:.5em;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
 }
 
 .social {
     color: black;
-    letter-spacing: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-decoration: none;
 }
 
@@ -46,14 +51,18 @@ a:visited, a:hover {
 }
 
 .flyer-img-responsive {
-    position:relative;
-    transform-origin: center center;
-    /* animation: scale 2000ms ease-in-out forwards; */
-    float: center;
     height: 100%;
     width: 100%;
-    object-position: 50% 50%;
-    object-fit: contain;
+    object-fit: fill;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border: 1em #fff;
+}
+
+.flyer-img-responsive:hover {
+    filter:blur();
 }
 
 .logo {
@@ -259,7 +268,7 @@ a.pure-button-primary {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
+    background: #000;
     color: #aaa;
 }
 
