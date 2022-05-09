@@ -1,2 +1,2 @@
-# [my site](https://phist210.github.io)
+# [my site](https://mindtapevents.github.io)
 # mindtapevents.github.io
